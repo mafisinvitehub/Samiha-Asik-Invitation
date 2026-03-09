@@ -237,12 +237,7 @@
         }
 
         .bottom-img {
-            position: absolute;
-            bottom: 105px;
-            left: -60px;
-            width: 500px;
-            pointer-events: none;
-            z-index: 0;
+            display: none;
         }
 
         @media(max-width:768px) {
@@ -270,6 +265,16 @@
 
             .names {
                 font-size: 38px;
+            }
+
+            .bottom-img {
+                display: block;
+                position: absolute;
+                bottom: 105px;
+                left: -60px;
+                width: 500px;
+                pointer-events: none;
+                z-index: 0;
             }
 
             .bottom-fixed-img {
