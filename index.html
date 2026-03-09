@@ -226,6 +226,25 @@
             transform: translateX(-50%);
         }
 
+        .top-right-img {
+            position: absolute;
+            top: 215px;
+            right: 0;
+            width: 600px;
+            transform: scaleX(-1);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bottom-img {
+            position: absolute;
+            bottom: 105px;
+            left: -60px;
+            width: 500px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
         @media(max-width:768px) {
             body {
                 padding: 0;
@@ -348,6 +367,8 @@
             Join us as we say “I Do”
         </div>
 
+        <img src="./asset/single-flower.png" class="top-right-img" loading="lazy" decoding="async">
+        <img src="./asset/double-flower.png" class="bottom-img" loading="lazy" decoding="async">
         <img src="./asset/couple-stand.webp" class="bottom-fixed-img" loading="lazy" decoding="async">
     </div>
 
